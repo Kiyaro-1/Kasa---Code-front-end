@@ -1,0 +1,60 @@
+.card_article {
+  position: relative;
+  width: 19vw;
+  height: 21.5em;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card_image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.card_title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5)
+  ); /* Adjust the gradient colors and opacity */
+}
+@media (max-width: 768px) {
+  .card_article {
+    position: relative;
+    width: 91vw;
+    height: 15em;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}

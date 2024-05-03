@@ -1,0 +1,72 @@
+.slide {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 0em;
+  max-width: 1440px;
+  height: 30em;
+}
+
+.slide img {
+  object-fit: cover;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow-icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 19em;
+  margin-left: 1em;
+  margin-right: 1.1em;
+  color: white;
+  user-select: none;
+}
+
+.fa-chevron-left {
+  font-size: 7em;
+}
+
+.fa-chevron-right {
+  font-size: 7em;
+}
+
+.image-indicator {
+  position: relative;
+  text-align: center;
+  color: white;
+  bottom: 10em;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 20em;
+  }
+  .slide img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .arrow-icons {
+    bottom: 11.3em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .fa-chevron-left {
+    font-size: 2em;
+  }
+
+  .fa-chevron-right {
+    font-size: 2em;
+  }
+  .image-indicator {
+    display: none;
+  }
+}

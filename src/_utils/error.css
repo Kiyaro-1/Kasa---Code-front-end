@@ -1,0 +1,47 @@
+.error-num {
+  font-weight: 700;
+  font-size: 15.35em;
+  text-align: center;
+  color: #ff6060;
+}
+.error-msg {
+  font-size: 2.5em;
+  text-align: center;
+  color: #ff6060;
+  margin-top: 2em;
+}
+.error-link {
+  display: block;
+  font-weight: 500;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 5.5em;
+  margin-bottom: 5.5em;
+}
+
+@media (max-width: 768px) {
+  .page-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .error-num {
+    height: 1.1em;
+  }
+  .error-num img {
+    position: relative;
+    bottom: 0.2em;
+    width: 70%;
+  }
+  .error-msg {
+    font-size: 1em;
+    width: 60%;
+    text-align: center;
+    color: #ff6060;
+    margin-top: 0em;
+  }
+  span.line {
+    display: inline-block;
+  }
+}
